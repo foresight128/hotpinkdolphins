@@ -1,0 +1,694 @@
+body{
+    position: relative;
+}
+/* header */
+header{ 
+    height: 100px;
+    position: absolute;
+    width: 100%;
+}
+.logo{
+    position: absolute;
+    top: 30%;
+    left: 1.5%;
+    z-index: 100;
+}
+header .more{
+    position: absolute;
+    top: 30%;
+    right: 0;
+    animation-name: scrollAni;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    cursor: pointer;
+    z-index: 10;
+}
+@keyframes scrollAni{
+    from{
+        top: 30%;
+    }
+    to{
+        top: 40%;
+    }
+}
+.more>a{
+    display: block;
+    width: 40px;
+    height: 140px;
+    background-color: #01132b;
+    opacity: 0.7;
+    text-align: center;
+    padding-top: 30px;
+    line-height: 1.2;
+}
+
+/* #container */
+.center{
+    width: 1520px;
+    margin: 0 auto;
+    /* background-color: pink; */
+}
+.title{
+    font-size: 18px;
+    color: #ff3399;
+    text-align: center;
+    font-weight: 400;
+    padding-top: 100px;
+    padding-bottom: 130px;
+}
+
+/* #container 1 .mainTopic */
+.mainTopic{
+    position: relative;
+}
+.mainTopic>.center{
+    margin: 0 auto;
+}
+.mainTopic .smallText{
+    text-align: center;
+    font-size: 18px;
+    z-index: 0;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+.mainTopic .smallText>p:first-of-type{
+    padding: 163px 0 50px;
+}
+.mainTopic .smallText>p:last-of-type{
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+.mainTopic .bigText{
+    position: absolute;
+    left: 10%;
+    top: 65%;
+    font-size: 9vw;
+    font-weight: 900;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+.mainTopic .bigText>p:first-of-type{
+    opacity: 1;
+}
+.mainTopic .bigText>p:first-of-type>span{
+    color: #000915;
+}
+.mainTopic .bigText>p:last-of-type{
+    position: absolute; 
+    top: 0;
+    opacity: 0;
+}
+.mainTopic .bigText>p:last-of-type>span{
+    color: #3d0505;
+}
+
+/* #container 2 .introText */
+.introText{
+    position: relative;
+}
+.introText div{
+    position: absolute;
+    width: 850px;
+    top: 20%;
+    left: 3%
+}
+.introText p{
+    font-size: 18px;
+    font-weight: 300;
+    margin: 40px 0;
+    text-indent: 20px;
+    line-height: 1.5;
+}
+.introText p>span{
+    color: #ff3399;
+    font-size: 22px;
+    font-weight: 700;
+    opacity: 0;
+}
+.introText p>span.onSpan{
+    opacity: 1;
+    transition-duration: 1s;
+}
+/* #container 3 .krWhaleWrap */
+.krWhaleWrap .krWhale{
+    margin: 0 auto;
+    text-align: center;
+}
+.krWhale>li{
+    display: inline-block; 
+    margin: 0 70px;
+    position: relative;
+    width: 350px;
+}
+.krWhale>li>.krWhaleImg img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.krWhale>li>.krWhaleImg.onImg>img:nth-of-type(2){
+    opacity: 1;
+}
+.krWhale>li>.krWhaleImg>img:first-of-type{
+    opacity: 1;
+}
+.krWhaleTBox{
+    margin-top: 400px;
+    text-align: center;
+}
+.krWhale>li>.krWhaleTBox>p{
+    line-height: 1.5;
+    color: #b4c2d5;
+    font-weight: 300;
+}
+.krWhale>li>.krWhaleTBox>.subTitle{
+    color: #5f80ad;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+/* #container 4 .whaling */
+
+.whaling .title{
+    text-align: left;
+    margin: 0 0 -50px 80px;
+}
+.whaling .cName{
+    float:left;
+    text-align: center;
+    line-height: 1.5;
+}
+.whaling .cName>p{
+    font-size: 4vw;
+    font-weight: 900;
+    color: #b4c2d5;
+}
+.whaling .cName>p:first-of-type{
+    font-size: 8vw;
+    color: white;
+}
+.whaling .cName>span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #b4c2d5;
+    margin-top: 20px;
+}
+.whaling .cName>span:first-of-type{
+    margin-top: 70px;
+}
+.whaling .map{
+    float:right;
+    margin-top: 50px;
+    position: relative;
+}
+.whaling .map>p{
+    width: 1000px;
+}
+.whaling .map>p>img{
+    width: 100%;
+}
+.circleWrapPeru,
+.circleWrapNorway,
+.circleWrapJapan{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+}
+.circleWrapPeru{
+    bottom: 15%;
+    left: 18%;
+}
+.circleWrapNorway{
+    top: 16%;
+    left: 43%;
+}
+.circleWrapJapan{
+    top: 31%;
+    right: 6%;
+}
+.peru,
+.norway,
+.japan{
+    width: 15px;
+    height: 15px;
+    background-color: #ff3399;
+}
+.circleWrapPeru>div,
+.circleWrapNorway>div,
+.circleWrapJapan>div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 50%;
+}
+.circle{
+    border: 2px dotted #ff3399;
+    box-sizing: border-box;
+    animation-name: cirAni;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+.circle:nth-of-type(2){
+    animation-delay: 2s;
+}
+.circle:nth-of-type(3){
+    animation-delay: 4s;
+}
+
+/*  */
+@keyframes cirAni{
+    from{
+        width: 50px;
+        height: 50px;
+        opacity: 1;
+    }
+    to{
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+}
+
+/* #container 5 .hNews */
+.newsBanner{
+    float: left;
+}
+.nBanner{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin-right: 60px;
+}
+.nBanner>li{
+    position: absolute;
+    display: none;
+}
+.nBanner>.active{
+    display: block;
+}
+.nBanner>li>a{
+    display: block;
+    width: 800px;
+    height: 500px;
+}
+.nBanner>li img{
+    width: 100%;
+}
+.controlBtn>.pageBtn{
+    float: left;
+    margin-right: 20px;
+}
+.controlBtn>.pageBtn>li{
+    display: inline-block;
+    padding: 30px 8px;
+}
+.pageBtn>li:first-child{
+    padding-left:0;
+}
+.pageBtn>li{
+    font-size: 18px;
+}
+.pageBtn>.onPageBtn>a{
+    color: #ff3399;
+}
+.arrowplayBtn>li{
+    display: inline-block;
+    padding: 31px 5px;
+}
+.newsTextWrap{
+    float: left;
+    width: 650px;
+}
+.newsText{
+    position: relative;
+}
+.newsText>li{
+    position: absolute;
+    display: none;
+}
+.newsText>.onText{
+    display: block;
+}
+.newsText>li>.newsTitle{
+    font-size: 25px;
+    margin: 60px 0 40px;
+}
+.newsText>li>.writer{
+    font-size: 15px;
+    font-weight: 300;
+}
+.newsText>li>.nContent{
+    font-size: 14px;
+    font-weight: 300;
+    margin: 100px 0 0;
+    line-height: 1.5;
+    word-break: keep-all;
+}
+/* #container 6 .actContents */
+.actWrap{
+    overflow: hidden;
+}
+.imgBanner{
+    width: 300%;
+    margin-left: -380px;
+}
+.imgBanner>li{
+    float: left;
+    width: 16.6666%;
+}
+.imgBanner>li>.photo{
+    padding: 0 10px;
+}
+.imgBanner>li img{
+    width: 100%;
+}
+.imgBanner>li>.photo>p{
+    display: none;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+.imgBanner>li.onImgBanner>.photo>p{
+    display: block;
+}
+.arrowBtn{
+    width: 720px;
+    position: relative;
+    bottom:20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.arrowBtn>li{
+    position: absolute;
+}
+.arrowBtn>.pBtn{
+    left: 0;
+}
+.arrowBtn>.nBtn{
+    right: 0;
+}
+
+/* #container 7 .sponsor */
+.sponsor{
+    text-align: center;
+}
+.sponsor p{
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 200px;
+    margin: 0 0 25px;
+    box-sizing: border-box;
+}
+.sponsor .sponBtn{
+    font-size: 35px;
+    font-weight: 900;
+    width: 400px;
+    height: 100px;
+    border-radius:10px;
+    background-color: #ff3399;
+    color: white;
+    border: 5px solid #ff3399;
+}
+.sponsor .sponBtn:hover{
+    background-color: transparent;
+}
+/* 마우스 올렸을 때 이벤트 주기 추가 */
+
+/* footer */
+footer{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.footTop{
+    background-color: #000915;
+    height: 250px;
+}
+.footTop .footLogo{
+    line-height: 250px;
+}
+.subscribeWrap{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.subscribeWrap>p{
+    font-size: 18px;
+    color: #7f92ab;
+    text-align: center;
+}
+.subscribeWrap>span{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 40px 0 20px;
+}
+.subscribeWrap>.subscribe>input:first-of-type{
+    width: 400px;
+    height: 32px;
+    border: none;
+    margin-right: 10px;
+    outline: none;
+    padding: 2px 5px;
+    box-sizing: border-box;
+}
+.subscribeWrap>.subscribe>input:last-of-type{
+    width: 200px;
+    height: 32px;
+    background-color: #000915;
+    border: 1px solid white;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.subscribeWrap>.footS{
+    margin: 15px 0;
+    font-size: 12px;
+    font-weight: 300;
+    color: #ff3399;
+    opacity: 1;
+}
+.footBottom{
+    background-color: #000101;
+    height: 150px;
+    padding-top: 35px;
+    box-sizing: border-box;
+}
+.footBottom .footLeft{
+    float: left;
+    width: 900px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #7f92ab;
+}
+.footBottom .footRight{
+    float: right;
+}
+.footBottom .sns>li{
+    display: inline-block;
+    margin-right: 15px;
+}
+.footBottom .sns>li:last-child{
+    margin-right: 0;
+}
+
+/* pc 1281~1580*/
+@media screen and (max-width:1580px){
+    .center{
+        width: calc( 100% - 5%);
+    }
+    /* #container 3 .krWhaleWrap */
+    .krWhale>li{
+        margin: 0 25px;
+        width: 350px;
+    }
+    /* #container 4 .whaling */
+    .whaling .map>p{
+        width: 60vw;
+    }
+    .circleWrapPeru{
+        bottom: 15%;
+        left: 16%;
+    }
+    .circleWrapNorway{
+        top: 12%;
+        left: 43%;
+    }
+    .circleWrapJapan{
+        top: 29%;
+        right: 4%;
+    }
+    /* #container 5 .hNews */
+    .nBanner{
+        margin-right: 30px;
+        width: 600px;
+        height: 375px;
+    }
+    .nBanner>li>a{
+        width: 600px;
+        height: 375px;
+    }
+    .newsTextWrap{
+        width: 500px;
+    }
+    .newsText>li>.newsTitle{
+        font-size: 20px;
+    }
+    /* #container 6. actContents */
+    .arrowBtn{
+        width: 620px;
+    }
+}
+/* pc 1024~1280 */
+@media screen and (max-width:1280px){
+    /* #container 2. introText */
+    .introText div{
+        width: 750px;
+    }
+    .introText p{
+        font-size: 16px;
+    }
+    .introText p>span{
+        font-size: 20px;
+    } 
+    /* #container 3 .krWhaleWrap */
+    .krWhale>li{
+        margin: 0 25px;
+        width: 250px;
+    }
+    .krWhaleTBox {
+        margin-top:300px;
+    }
+    /* #container 4 .whaling */
+    .circleWrapPeru{
+        bottom: 10%;
+        left: 13%;
+    }
+    .circleWrapNorway{
+        top: 8%;
+        left: 40%;
+    }
+    .circleWrapJapan{
+        top: 25%;
+        right: 2%;
+    }
+    /* #container 5 .hNews */
+    .nBanner{
+        width: 48.6vw;
+        height: 28.5vw;
+    }
+    .nBanner>li>a{
+        width: 48.6vw;
+        height: 25.5vw;
+    }
+    .newsTextWrap{
+        width: 40vw;
+    }
+    .newsText>li>.newsTitle{
+        margin: 20px 0 20px;
+    }
+    .newsText>li>.writer{
+        font-size: 13px;
+    }
+    .newsText>li>.nContent{
+        font-size: 14px;
+        margin: 30px 0 0;
+        line-height: 1.5;
+        word-break: keep-all;
+    }
+    /* footer */
+    .footTop .footLogo>img{
+        width: 50px;
+    }
+    .subscribeWrap>.subscribe>input:first-of-type{
+        width: 250px;
+    }
+    .subscribeWrap>.subscribe>input:last-of-type{
+        width: 120px;
+    }
+    .footBottom .footLeft{
+        width: 700px;
+    }
+}
+/* ipad 768~1024 */
+@media screen and (max-width:1024px){
+    /* #container 2. introText */
+    .introText div{
+        width: 600px;
+    }
+    .introText p{
+        font-size: 16px;
+    }
+    .introText p>span{
+        font-size: 20px;
+    } 
+    /* #container 4 .whaling */
+    .circleWrapPeru{
+        bottom: 2%;
+        left: 10%;
+    }
+    .circleWrapNorway{
+        top: 2%;
+        left: 35%;
+    }
+    .circleWrapJapan{
+        top: 20%;
+        right:0;
+    }
+    /* footer */
+    
+    .footBottom .footLeft{
+        width: 500px;
+    }
+}
+/* mobile ~767*/
+@media screen and (max-width:767px){
+    /* 제거 */
+    .newsText>li>.nContent,
+    .footTop,
+    .footRight{
+        display: none;
+    }
+    .mainTopic .bigText {
+        top: 50%;
+    }
+    /* #container 2. introText */
+    .introText div{
+        width: 80.35vw;
+    }
+    .introText p{
+        font-size: 14px;
+    }
+    .introText p>span{
+        font-size: 18px;
+    } 
+    /* #container 5 .hNews */
+    .pageBtn>li{
+        font-size: 14px;
+    }
+    /* 7. sponsor */
+    .sponsor .sponBtn{
+        width: 300px;
+        font-size: 28px;
+    }
+    /* footer */
+    footer{
+        height: 200px;
+    }
+    
+    .footBottom{
+        height: 200px;
+    }
+    .footBottom .footLeft{
+        width: 90%;
+    }
+}

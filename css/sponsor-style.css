@@ -1,0 +1,373 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    overflow: hidden;
+    background-image: none;
+}
+/* header */
+header{ 
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.logo{
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    z-index: 100;
+}
+/* #container */
+/* .videoWrap */
+.videoWrap{
+    height: 100%;
+    position: relative;
+}
+.full-bg{
+    position: absolute;
+    z-index: -100;
+}
+.full-bg video{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+/* loadingWrap */
+.loadingWrap{
+    /* display: none; */
+}
+/* .textWrap */
+.textWrap{
+    width: 1400px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.textWrap>.hotText{
+    float: left;
+}
+.textWrap>.text{
+    float: right;
+    margin-top: 45px;
+}
+.hotText>p{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.8;
+}
+.hotText>p>span{
+    color: #ff3399;
+    position: relative;
+    opacity: 0;
+} 
+.text>p{
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 1.5;
+}
+.sponsorWrap-1,
+.sponsorWrap-2,
+.sponsorWrap-3{
+    padding-top: 100px;
+}
+
+/* sponsorWrap 겹치는 것 */
+.bg{
+    width: 1300px;
+    height: 650px;
+    background-color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    margin: 70px auto 0;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+.sponTitle>li{
+    display: inline-block;
+    margin: 0 120px 0 150px;
+}
+.sponTitle>.stitle1{
+    margin-left: 40px;
+}
+.sponTitle>.stitle3{
+    margin-right: 40px;
+}
+.sponTitle>li>a{
+    display: block;
+    padding: 27px 20px 26px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #003366;
+}
+.sponTitle>.ontitle>a{
+    color: #ff3399;
+}
+.sponCheck{
+    position: relative;
+}
+.sponCheck>span{
+    display: block;
+    width: 1200px;
+    height: 3px;
+    margin: 0 auto;
+    background-color: #003366;
+}
+.sponCheck>.scheck{
+    width: 400px;
+    background-color: #ff3399;
+    position: absolute;
+    top: 0;   
+    left: 0; 
+}
+.sponCheck>.scheck.check2{
+    left: 400px;
+}
+.sponCheck>.scheck.check3{
+    left: 800px;
+}
+/* sponsorWrap-1 */
+.sponsorWrap-1{
+    display: none;
+}
+.sponsorship{
+    position: relative;
+}
+.sponsorship>p{
+    color: #003366;
+    font-size: 18px;
+    margin: 40px 0 8px;
+}
+.sponAmount{
+    margin-top: 20px;
+}
+.sponAmount>li{
+    float: left;
+    width: 260px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 25px 20px;
+}
+.sponAmount>li>a{
+    display: block;
+    box-sizing: border-box;
+    /* background-color: rebeccapurple; */
+    line-height: 70px;
+    color: #666;
+    font-size: 25px;
+    font-weight: 300;
+}
+.sponAmount>.onamount{
+    background-color: #003366;
+    box-shadow: 0 0 10px 1px black;
+}
+.sponAmount>.onamount>a{
+    color: white;
+}
+.sponsorship>input{
+    width: 260px;
+    height: 70px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    background-color:rgba(255, 255, 255, 0.85);;
+    outline: none;
+    border: none;
+    vertical-align: top;
+    position: absolute;
+    bottom: 125px;
+    left: 320px;
+}
+.nextBtn1{
+    width: 350px;
+    height: 70px;
+    background-color: #ff3399;
+    margin: 30px auto 0;
+}
+.nextBtn1>a{
+    display: block;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 70px;
+}
+
+
+
+/* sponsorWrap-2 */
+.sponsorWrap-2{
+    display: none;
+}
+#sponsorForm{
+    margin-top: 40px;
+}
+#sponsorForm>div,
+#paymentForm>div{
+    float: left;
+}
+#sponsorForm>.labelWrap,
+#paymentForm>.labelWrap{
+    margin-left: 270px;
+    position: relative;
+}
+#sponsorForm label,
+#paymentForm label{
+    display: block;
+    color: #003366;
+    font-size: 18px;
+    margin: 8px 30px 48px 0;
+}
+#sponsorForm label::after,
+#paymentForm label::after{
+    content: "";
+    width: 1px;
+    height: 40px;
+    background-color: #003366;
+    position: absolute;
+    top: 0;
+    right: -5px;
+}
+#sponsorForm>.labelWrap>.userphone-field::after{
+    top: 65px;
+}
+#sponsorForm>.labelWrap>.usermail-field::after{
+    top: 130px;
+}
+#sponsorForm>.labelWrap>.useraddress-field::after{
+    top: 195px;
+}
+#sponsorForm input,
+#paymentForm input{
+    width: 600px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    vertical-align: top;
+    outline: none;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #666;
+    border: none;
+    text-align: left;
+    margin: 0 24px 25px;
+}
+#sponsorForm .userphone-field-num,
+#sponsorForm button{
+    width: 180px;
+}
+#sponsorForm .userphone-field-num{
+    margin: 0 27px 25px 0;
+}
+#sponsorForm .phone-num1{
+    margin: 0 27px 25px 25px;
+}
+#sponsorForm #useraddress-field{
+    width: 390px;
+    margin: 0 24px 25px 0;
+}
+.sponsorinfo>span,
+.payment>.paySpan{
+    color: #ff3399;
+    position: relative;
+    opacity: 0;
+}
+.payment>.paySpan{
+    padding-top: 53px;
+    margin-bottom: -51px;
+    display: block;
+}
+#sponsorForm button{
+    background-color: #003366;
+    height: 40px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin: 0 0 25px;
+}
+.sponbutton{
+    width: 430px;
+    margin: 20px auto 0;
+}
+.sponbutton>div{
+    float: left;
+    height: 70px;
+}
+.sponbutton>div>a{
+    display: block;
+    line-height: 70px;
+    font-size: 25px;
+}
+.sponbutton>.prevBtn2,
+.sponbutton>.prevBtn3{
+    width: 80px;
+    background-color: rgba(28, 75, 119, 0.8);
+}
+.sponbutton>.prevBtn2>a,
+.sponbutton>.prevBtn3>a{
+    color: #003366;
+}
+.sponbutton>.nextBtn2,
+.sponbutton>.nextBtn3{
+    width: 350px;
+    background-color: #ff3399;
+}
+
+
+
+/* sponsorWrap-3 */
+.sponsorWrap-3{
+    display: none;
+}
+#paymentForm{
+    margin-top: 40px;
+}
+#paymentForm>.labelWrap{
+    margin-left: 200px;
+}
+#paymentForm>.labelWrap>.cardvalidity-field::after{
+    top: 65px;
+}
+#paymentForm>.labelWrap>.cardpw-field::after{
+    top: 130px;
+}
+#paymentForm>.labelWrap>.cardusername-field::after{
+    top: 195px;
+}
+#paymentForm>.labelWrap>.cardbirth-field::after{
+    top: 260px;
+}
+#paymentForm #cardpw-field{
+    width: 200px;
+    margin: 0 0 25px -160px;
+}
+#paymentForm span{
+    line-height: 40px;
+    margin-left: 25px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #666;
+}
+.payment>.sponbutton{
+    margin: 70px auto 0;
+}
+
+/* 후원 완료 메시지 */
+.sponsor-completed{
+    display: none;
+}
+.sponsor-completed>p{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.sponsor-completed>p>a{
+    display: block;
+    padding: 30px 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    color: #ff3399;
+}
